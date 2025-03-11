@@ -1,36 +1,88 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🐍 Snake Game
 
-## Getting Started
+Moderní verze klasické hry Snake vytvořená v Reactu a Next.js s pěknou grafikou a animacemi.
 
-First, run the development server:
+## ✨ Funkce
+
+- Plynulé animace s využitím Framer Motion
+- Responzivní design pro hraní na všech zařízeních
+- Postupné zvyšování obtížnosti
+- Skóre a herní stavy (pauza, konec hry)
+- Ovládání pomocí klávesnice nebo tlačítek na obrazovce
+- Barevně gradientní had pro efektní vizuální zážitek
+
+## 🚀 Technologie
+
+- [Next.js](https://nextjs.org/) - React framework
+- [React](https://reactjs.org/) - JavaScript knihovna pro tvorbu uživatelských rozhraní
+- [TypeScript](https://www.typescriptlang.org/) - Typový systém pro JavaScript
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
+- [Framer Motion](https://www.framer.com/motion/) - Knihovna pro animace v Reactu
+- [React Icons](https://react-icons.github.io/react-icons/) - Ikony pro React aplikace
+
+## 🎮 Jak hrát
+
+1. Použijte **šipky** na klávesnici pro ovládání směru hada
+2. Sbírejte červená jablka pro získání bodů
+3. Vyhněte se kolizi s vlastním tělem
+4. Stiskněte **mezerník** pro pozastavení hry
+5. Na mobilních zařízeních můžete použít tlačítka na obrazovce pro ovládání
+
+## 💻 Jak spustit lokálně
+
+Nejprve naklonujte repozitář:
+
+```bash
+git clone https://github.com/vase-jmeno/snake-game.git
+cd snake-game
+```
+
+Instalace závislostí:
+
+```bash
+npm install
+# nebo
+yarn install
+# nebo
+pnpm install
+```
+
+Spuštění vývojového serveru:
 
 ```bash
 npm run dev
-# or
+# nebo
 yarn dev
-# or
+# nebo
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Otevřete [http://localhost:3000](http://localhost:3000) ve svém prohlížeči a užijte si hru!
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🔧 Sestavení pro produkci
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm run start
+```
 
-## Learn More
+## 🌐 Nasazení na Vercel
 
-To learn more about Next.js, take a look at the following resources:
+Nejjednodušší způsob, jak nasadit tuto aplikaci, je použít platformu [Vercel](https://vercel.com), vytvořenou autory Next.js.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Nahrát kód do GitHub repositáře
+2. Importovat projekt do Vercelu
+3. Vercel automaticky detekuje Next.js a nastaví optimální konfiguraci
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vase-jmeno/snake-game)
 
-## Deploy on Vercel
+## 📝 Licence
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Tento projekt je licencován pod licencí MIT - viz soubor [LICENSE](LICENSE) pro více informací.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🙏 Poděkování
+
+- Inspirace: klasická hra Snake
+- Ikony: [React Icons](https://react-icons.github.io/react-icons/)
+- Grafické prvky: [Tailwind CSS](https://tailwindcss.com/)
+- Animace: [Framer Motion](https://www.framer.com/motion/)
