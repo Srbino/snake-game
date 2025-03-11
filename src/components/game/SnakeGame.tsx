@@ -61,12 +61,12 @@ const getInitialState = (): GameState => {
 
 const SnakeGame: React.FC = () => {
   // Použití useRef pro počáteční stav, aby se nevytvářel při každém renderování
-  const initialStateRef = useRef<GameState>();
+  const initialStateRef = useRef<GameState | null>(null);
   if (!initialStateRef.current) {
     initialStateRef.current = getInitialState();
   }
   
-  const [gameState, setGameState] = useState<GameState>(initialStateRef.current);
+  const [gameState, setGameState] = useState<GameState>(initialStateRef.current || getInitialState());
   const [showControls, setShowControls] = useState<boolean>(false);
   const gameLoopRef = useRef<NodeJS.Timeout | null>(null);
 
